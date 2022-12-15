@@ -1,0 +1,94 @@
+@font-face{
+    font-family:"campus";
+    src: url("../police/campus/CAMPUS\ PERSONAL\ USE.ttf");
+}
+
+@font-face{
+    font-family:"colleged";
+    src: url("../police/colleged/Colleged.ttf");
+}
+
+@font-face{
+    font-family:"dark_college";
+    src: url("../police/dark_college/Dark\ College.ttf");
+}
+
+
+@font-face{
+    font-family:"sport";
+    src: url("../police/sport/Sport.ttf");
+}
+
+body{
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8PDw0PDw8PDw8PDw8PDw8PFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQMAB//EABgQAQEBAQEAAAAAAAAAAAAAAAABERIC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APIXOUHOVwOcuLgJi4uLgJjsKRcAZFwpFwAxeTxcAMdjTl3IM8dy05XkGWOxpjuQZ4mNeU5BniY0x3IMsdjTBwAxMaYOAGOw7BsAUwscAoSAjnOBVcoOkWR0iyA7FkWQpAGQpFkKQBkKQpFkAZFnk+SnkGc8ry05XkGfKzy0nleQZ8py25dyDHl3LXl3IMuU5bcpyDG+U5bXyN8gywbG18jfIMsSxrYNgMrExpYOAFg40sGwAxDsGwERXAqx0KA6RZFkKQHSLIshSAkhSLIcgJPJYshyAEhTychTyATyXJzyvIM+V5a8ryDLl3LXl3IMuU5bcu5BjynLa+UvkGN8jY2vlLAYXylja+RsBjYNjawLAY2DY2sCwGViWNLBsBlUaWDQCoSYCwo6FIDpDkSQpAWQ5EkOQHSHI6Q5AdIUiyHICSFIshyAMhTyUhSAEi4ci4Acu5aY7AZ8pjXHcgy5TlrYOAyvkbG1g2AxsGxtYFgMbAsbWDYDGwLGtg2AxsGxrYFgMrBrSwbAZ2IVQFhwYcBYcGHAKHIMPyBeYcgxpAWQ5EhyAshyJIcgOkKR0KAmFI6QsAcXCxwDiYeJgBYlh4lgM7BsaUbAZWDY0o2AysCxrWfqAz9QLGlgUGdjOtfQUGdgU6NAKJVAWFBhQD8nAh+QOHAhwGkPyEOAcOB5OAcOBDgFCkGFAKLEigsXEUHWIqAg0qNAbBpUaAUadCgFD0dCgzoU6FAKzrSs6AUKdCgNEqIOhwIUA4cZynAaQ4zlOA1lPyylaeQaQ5Wcpyg0hyspTlBpKUrOUpQaSrKz0pQPXaOu0C1LU1NBbUtTU0HWjVtC0Eo1bQtBLQq2h6oDQpWhaA0KVoWgNClQoDRKiDoUrOFAaQ4zlKUGspSspTlBrKcrKU5QaynKxlOUG0pSsZTnoGspSsp6WegaylrLp3QNdXWXS9A01NZ9O6A7U0OkvoCtG0b6G0CtC1L6G0FtC1LRtB1oWutC0HWhatoWglo1bQtBKmraOghShpAcpSs5SlBpKUrOVZQbSlKylKUG0pSsZSnoG09FPTGUp6BtPRaxnpegbT0vTHpegbdO1j0vQNek6Z9J0DXob6DpOgO0b6DpL6ArRtHob6ArQtS0bQW0bUtG0HWja60bQdaNdaNB1R1qAiioFKUoSrKBylKzlWUGsqys9WUGspT0ylXQbT0s9MZSnoG09L0xnpZ6Bt0vTHp3QNundMundA16d0y6d0DTpOmfSdA0vpOg6G+gO+kvoNS0CvobRtS0FtS0bUtBbRtdqaDk1LUBdRyAio4CcmuAtXRdoHq6GroHKWs9doNdXWWrKDXXdM9XQadL0y13QNendM+naDTp3TPpNBp07pnrtA+k6DU0D1NHU0C1NHU0C1LR12guomoCo5AVHOBFc4HRXOByucDnOcCq5wK6OcCuVwOVzgRyuByOcDnOcCVznAlRzgdUc4Ec5wI6ucCOrnA5Krgf/9k=);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body{
+    margin: 0%;
+}
+
+.a2048{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.a2048 img{
+    width: 73%;
+    }
+
+.exit-game{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 90%;
+    left: 35%
+    }
+    
+    section{
+    height: 0vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+    form{
+    width: 500px;
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    }
+    input{
+    font-family: "colleged";
+    display: block; 
+    margin: 10px auto;
+    width: 300px;
+    padding: 20px 20px;
+    outline: none;
+    border:none;
+    box-sizing: border-box;
+    border-radius:10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #000000;
+    color: white;
+    font-size: 25px;
+    }
+
+a{
+    text-decoration: none;
+}
+.clumsybird{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+.clumsybird img{
+    width: 40%;
+}
