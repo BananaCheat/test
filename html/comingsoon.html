@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coming Soon - Moto Theme</title>
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .logo {
+            color: #fff;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .logo span {
+            color: #ff9800;
+        }
+        .countdown {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        .countdown span {
+            color: #ff9800;
+        }
+        .motorcycle {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .animation {
+            animation: rotate 1s linear infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            animation-duration: 20s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Coming <span>Soon</span></h1>
+        <p class="countdown">Nous travaillons dur pour vous apporter quelque chose de génial !
+           <br> Restez à l'écoute, le site Web sera prêt dans <span id="countdown"></span></p>
+        <img class="motorcycle animation" src="../image/favicon.jfif" alt="Motorcycle">
+    </div>
+
+    <script>
+        // Set the countdown date
+        var countDownDate = new Date("2023-06-01T00:00:00Z").getTime();
+
+        // Update the countdown every 1 second
+        var countdownInterval = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is finished, clear the interval
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "Website is now live!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
