@@ -14,38 +14,21 @@
 <body>
 
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a>
-
-        <li class="deroulant"><a href="#">KTM &ensp;</a>
-          <ul class="sous">
-            <li><a href="ktmmx.html">MX</a></li>
-            <li><a href="#">Sport Tourer</a></li>
-            <li><a href="ktmnaked.html">Naked</a></li>
-            <li><a href="#">SuperMotard</a></li>
-            <li><a href="ktmsupersport.html">SuperSport</a></li>
-          </ul>
-        </li>
-        <li class="deroulant"><a href="#">Yamaha &ensp;</a>
-            <ul class="sous">
-              <li><a href="#">Supersport</a></li>
-              <li><a href="#">Hyper Naked</a></li>
-              <li><a href="#">Sport Heritage</a></li>
-              <li><a href="#">Sport Touring</a></li>
-              <li><a href="#">Adventure</a></li>
-              <li><a href="#">Off Road</a></li>
-            </ul>
-          </li>
-          <li class="deroulant"><a href="#">Beta &ensp;</a>
-            <ul class="sous">
-              <li><a href="#">Enduro</a></li>
-              <li><a href="#">Trial</a></li>
-              <li><a href="#">ALP</a></li>
-              <li><a href="#">Motard</a></li>
-              <li><a href="#">MiniBike</a></li>
-            </ul>
-          </li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="deroulant"><a href="../html/ktmcatego.html">KTM &ensp;</a>
+                <ul class="sous">
+                </ul>
+            </li>
+            <li class="deroulant"><a href="../html/comingsoon.html">Yamaha &ensp;</a>
+                <ul class="sous">
+                </ul>
+            </li>
+            <li class="deroulant"><a href="../html/comingsoon.html">Beta &ensp;</a>
+                <ul class="sous">
+                </ul>
+            </li>
+        </ul>
     </nav>
     
         <!--Meilleur Vente / Promo-->
@@ -331,7 +314,6 @@
     
     <style>
         body {
-            background-image: url(../image/ktm.png);
             background-repeat: no-repeat;
             background-position: left top;
             background-size: cover;
@@ -339,6 +321,7 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             width: 100%;
+            height: 320vh;
         }
         
         .galerie {
@@ -368,7 +351,7 @@
             justify-content: center;
             background-color: rgba(0, 0, 0, 0.700);
             text-align: center;
-            border: 2px solid red;
+            border: 2px solid rgb(255, 106, 0);
             margin-left: 14%;
             margin-top: 2%;
             width: 300px;
@@ -379,10 +362,64 @@
             justify-content: center;
             background-color: rgba(0, 0, 0, 0.700);
             text-align: center;
-            border: 2px solid red;
+            border: 2px solid rgb(255, 106, 0);
             margin-left: 14%;
             margin-top: 2%;
             width: 300px;
+        }
+
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        .deroulant {
+            position: relative;
+        }
+
+        .deroulant:hover .sous {
+            display: block;
+        }
+
+        .sous {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .sous li {
+            float: none;
+        }
+
+        .deroulant:hover .sous li a {
+            color: #000;
         }
     </style>
     

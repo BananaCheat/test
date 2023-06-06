@@ -1,7 +1,5 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
@@ -11,54 +9,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../image/favicon.jfif">
     <title>KTM SUPERMOTO></title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #f57c00;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            color: #000000;
+            font-size: 36px;
+        }
+
+        .category-container {
+            padding: 50px 0;
+        }
+
+        .category {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .category img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .category h2 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        .category p {
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #f57c00;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        .deroulant {
+            position: relative;
+        }
+
+        .deroulant:hover .sous {
+            display: block;
+        }
+
+        .sous {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .sous li {
+            float: none;
+        }
+
+        .deroulant:hover .sous li a {
+            color: #000;
+        }
+    </style>
 </head>
 <body>
-
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+  
+            <li class="deroulant">
+                <a href="../html/ktmcatego.html">KTM &ensp;</a>
+            </li>
 
-        <li class="deroulant"><a href="#">KTM &ensp;</a>
-          <ul class="sous">
-            <li><a href="ktmmx.html">MX</a></li>
-            <li><a href="ktmnaked.html">Naked</a></li>
-            <li><a href="ktmsporttourer.html">Sport Tourer</a></li>
-            <li><a href="ktmsupersport.html">SuperSport</a></li>
-          </ul>
-        </li>
-        <li class="deroulant"><a href="#">Yamaha &ensp;</a>
-            <ul class="sous">
-              <li><a href="comingsoon.html">Supersport</a></li>
-              <li><a href="comingsoon.html">Hyper Naked</a></li>
-              <li><a href="comingsoon.html">Sport Heritage</a></li>
-              <li><a href="comingsoon.html">Sport Touring</a></li>
-              <li><a href="comingsoon.html">Adventure</a></li>
-              <li><a href="comingsoon.html">Off Road</a></li>
-            </ul>
-          </li>
-          <li class="deroulant"><a href="#">Beta &ensp;</a>
-            <ul class="sous">
-              <li><a href="comingsoon.html">Enduro</a></li>
-              <li><a href="comingsoon.html">Trial</a></li>
-              <li><a href="comingsoon.html">ALP</a></li>
-              <li><a href="comingsoon.html">Motard</a></li>
-              <li><a href="comingsoon.html">MiniBike</a></li>
-            </ul>
-          </li>
-      </ul>
+            <li class="deroulant">
+                <a href="../html/comingsoon.html">Yamaha &ensp;</a>
+            </li>
+
+            <li class="deroulant">
+                <a href="../html/comingsoon.html">Beta &ensp;</a>
+            </li>
+        </ul>
     </nav>
-    
-        <!--Meilleur Vente / Promo-->
-
-
-    
-
 
     <h1>KTM SUPER MOTARD</h1>
 
-
     <div class="galerie">
-
         <div class="item">
             <img src="../image/PHOBIKE-removebg-preview.png">
             <div class="itemt">KTM 890 SMT</div>
@@ -68,84 +160,7 @@
             <div class="itemt">KTM 1290 SUPER DUKE GT</div>
         </div>
     </div>
-
-
-
-        <style>
-
-            .itemt{
-                color: white;
-                justify-content: center;
-                background-color: rgba(0, 0, 0, 0.700);
-                text-align: center;
-                border: 2px solid red;
-                margin-left: 14%;
-                margin-top: 2%;
-                width: 300px;
-            }
-
-        body {
-            background-image:url("data:image/jpeg;base64,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");
-            background-repeat:no-repeat;
-            background-position:left top;
-            background-size: cover;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;    
-            width: 100%;  
-        }
-        
-        .galerie {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            width:100%;
-            max-width: 4000px;
-            margin-top:3%;
-            /*margin: 100px auto 0;
-            /* background: crimson; */
-        }
-
-
-
-        .item {
-            width: 400px;
-            height: 400px;
-            margin: 100px;
-            overflow: hidden;
-           color: white;
-           
-        }
-        .item img {
-            width: 100%;
-            height: auto;
-        }
-
-
-        .itemt{
-            color: white;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.700);
-            text-align: center;
-            border: 2px solid red;
-            margin-left: 14%;
-            margin-top: 2%;
-            width: 300px;
-        }
-
-        .textt{
-            color: white;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.700);
-            text-align: center;
-            border: 2px solid red;
-            margin-left: 14%;
-            margin-top: 2%;
-            width: 300px;
-        }
-        </style>
-
-
-    
 </body>
 </html>
+
+
